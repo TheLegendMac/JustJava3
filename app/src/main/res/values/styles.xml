@@ -1,0 +1,104 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+    <!--This is for the custom Action Bar-->
+    <style name="captureTitleBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!--This is for the Tool Bar boxes within the app-->
+    <style name="activityTitleText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">38sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <!--This is for the text within the custom Action Bar-->
+    <style name="HeaderTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <!--This is for the edit text view.-->
+    <style name="nameText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="android:layout_marginBottom">25dp</item>
+        <item name="android:contentDescription">Whats your name?</item>
+        <item name="android:ems">10</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorLink">@color/colorPrimary</item>
+    </style>
+
+    <!--This is for the btns of the quantity-->
+    <style name="quantityBtnStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">#ffff</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!--This is for the number of cups of java-->
+    <style name="numOfCups">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textColor">#ffff</item>
+        <item name="android:textSize">48sp</item>
+    </style>
+
+    <!--This is for the line text-->
+    <style name="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+    <style name="centeredLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!--Checkbox Style-->
+    <style name="checkboxStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textColorLink">@color/colorPrimary</item>
+    </style>
+
+</resources>
+

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Just Java 3</string>
+    <string name="whippedCream">Whipped Cream</string>
+    <string name="cinnamon">Cinnamon</string>
+    <string name="toppings">Toppings</string>
+    <string name="nameQuestion">What\'s your name?</string>
+    <string name="cups">Cups</string>
+    <string name="plus">+</string>
+    <string name="numOfCups">0</string>
+    <string name="negative">-</string>
+    <string name="appNameTitle">Mac\'s Java Shop</string>
+    <string name="long_name">Wow! That is a long name.</string>
+</resources>

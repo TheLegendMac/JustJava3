@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.macrealstudios.justjava3.MainActivity"
+    android:background="#272b2f">
+
+    <RelativeLayout
+        android:id="@+id/titleBar"
+        style="@style/captureTitleBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/activityTitleText"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/appNameTitle" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/name"
+        style="@style/nameText"
+        android:layout_below="@+id/titleBar"
+        android:hint="@string/nameQuestion" />
+
+    <View
+        style="@style/line"
+        android:layout_below="@id/name" />
+
+    <TextView
+        android:id="@+id/cups"
+        style="@style/HeaderTextStyle"
+        android:layout_below="@id/name"
+        android:text="@string/cups" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        style="@style/centeredLayout"
+        android:layout_below="@id/cups">
+
+        <Button
+            android:id="@+id/decrementBtn"
+            style="@style/quantityBtnStyle"
+            android:onClick="decrementBtn"
+            android:text="@string/negative" />
+
+         <TextView
+            android:id="@+id/quantity_text_view"
+            style="@style/numOfCups"
+            android:text="@string/numOfCups" />
+
+        <Button
+            android:id="@+id/incrementBtn"
+            style="@style/quantityBtnStyle"
+            android:onClick="incrementBtn"
+            android:text="@string/plus" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/toppingTitle"
+        style="@style/HeaderTextStyle"
+        android:layout_below="@id/linearLayout"
+        android:text="@string/toppings" />
+
+    <View
+        style="@style/line"
+        android:layout_below="@id/linearLayout" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimary"
+        android:onClick="submitOrder"
+        android:padding="25dp"
+        android:text="Order"
+        android:textColor="#ffff"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>
