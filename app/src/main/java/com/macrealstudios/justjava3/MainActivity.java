@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -14,8 +16,11 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     int quantity = 0;
-    int priceOfCup = 6;
+    int priceOfCup = 3;
     EditText name;
+    Button submitOrderButton;
+    CheckBox cinnamon, whippedCream;
+    Boolean hasWhippedCream = true;
 
 
     @Override
@@ -23,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         name = findViewById(R.id.name);
+        submitOrderButton = findViewById(R.id.submitButton);
+        cinnamon = findViewById(R.id.cinnamonCheckbox);
+        whippedCream = findViewById(R.id.whippedCreamCheckbox);
 
     }
 
@@ -77,11 +85,10 @@ public class MainActivity extends AppCompatActivity {
         toppingTitle.setText(message);
     }
 
-    private String createOrderSummary(int price) {
-        String priceMessage = "Kaptin Kunal" +
-                "\nQuantity: " + quantity +
-                "\nTotal: $" + price +
-                "\nThank you!";
+    private String createOrderSummary(int price, EditText name) {
+        String priceMessage =
+                "Your total for " + quantity + " cups is $" + price + "." +
+                "\nThank you " + name.getText().toString() + "!";
         displayMessage(priceMessage);
         return priceMessage;
     }
@@ -90,8 +97,12 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        int price = calculatePrice();
+        if (cinnamon.isChecked()) {
+            Log.v("Add cream", "Adding Cream");
+            cinnamon.setChecked(false);
+        }
+        Toast.makeText(this,"Coming right up!", Toast.LENGTH_SHORT).show();
         checkNameSize(name);
-        displayMessage(createOrderSummary(price));
+        displayMessage(createOrderSummary(calculatePrice(), name));
     }
 }

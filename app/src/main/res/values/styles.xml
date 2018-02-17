@@ -21,11 +21,11 @@
     <style name="activityTitleText">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
-        <item name="android:textSize">38sp</item>
+        <item name="android:textSize">28sp</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginTop">15dp</item>
         <item name="android:paddingBottom">10dp</item>
     </style>
 
@@ -36,7 +36,7 @@
         <item name="android:gravity">center_horizontal</item>
         <item name="android:layout_marginTop">20dp</item>
         <item name="android:textColor">#FFFFFF</item>
-        <item name="android:textSize">28sp</item>
+        <item name="android:textSize">24sp</item>
     </style>
 
     <!--This is for the edit text view.-->
@@ -58,7 +58,7 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_margin">15dp</item>
-        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:background">@drawable/roundbutton</item>
         <item name="android:padding">10dp</item>
         <item name="android:textColor">#ffff</item>
         <item name="android:textSize">12sp</item>
@@ -73,7 +73,7 @@
         <item name="android:gravity">center</item>
         <item name="android:padding">15dp</item>
         <item name="android:textColor">#ffff</item>
-        <item name="android:textSize">48sp</item>
+        <item name="android:textSize">38sp</item>
     </style>
 
     <!--This is for the line text-->
@@ -94,11 +94,11 @@
     <style name="checkboxStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_margin">15dp</item>
+        <item name="android:paddingLeft">15dp</item>
         <item name="android:layout_weight">1</item>
         <item name="android:textColor">#ffffff</item>
         <item name="android:textColorLink">@color/colorPrimary</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
     </style>
-
 </resources>
 
