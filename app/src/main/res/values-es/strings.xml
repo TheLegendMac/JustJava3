@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Solo Java 3</string>
+    <string name="appNameTitle">Mac\'s Tienda de Java</string>
+
+    <!--Name tags-->
+    <string name="nameQuestion">¿Cuál es tu nombre?</string>
+    <string name="long_name">¡Guauu! Ese es un nombre largo.</string>
+
+    <!--Topping titles within main xml-->
+    <string name="whippedCream">Crema batida</string>
+    <string name="cinnamon">Canela</string>
+    <string name="toppings">Ingredientes</string>
+
+    <!--Java Quantity Buttons-->
+    <string name="cups">Tazas</string>
+    <string name="plus">+</string>
+    <string name="numOfCups">2</string>
+    <string name="negative">-</string>
+    <string name="orderBtn">Orden</string>
+    <string name="lotOfJavaMessage">¡Guauu! Eso es mucho java.</string>
+
+
+    <!--Message outputs for ordering java.-->
+    <string name="regularMessage">Su total para %d tazas de java es $%d.</string>
+    <string name="cinnamonMessage">Su total para %d tazas de canela java es $%d.</string>
+    <string name="whippedCreamMessage">Su total para %d tazas de crema batida de java es $%d.</string>
+    <string name="bothMessage">Su total para %d tazas de canela y crema de java es $%d.</string>
+    <string name="thankYouMessage">\n\nGracias %s !</string>
+
+    <!--Email Intent Strings-->
+    <string name="emailTitle">Orden de Java para %s</string>
+
+
+</resources>

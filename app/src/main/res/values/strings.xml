@@ -1,13 +1,33 @@
 <resources>
     <string name="app_name">Just Java 3</string>
+    <string name="appNameTitle">Mac\'s Java Shop</string>
+
+    <!--Name tags-->
+    <string name="nameQuestion">What\'s your name?</string>
+    <string name="long_name">Wow! That is a long name.</string>
+
+    <!--Topping titles within main xml-->
     <string name="whippedCream">Whipped Cream</string>
     <string name="cinnamon">Cinnamon</string>
     <string name="toppings">Toppings</string>
-    <string name="nameQuestion">What\'s your name?</string>
+
+    <!--Java Quantity Buttons-->
     <string name="cups">Cups</string>
     <string name="plus">+</string>
-    <string name="numOfCups">0</string>
+    <string name="numOfCups">2</string>
     <string name="negative">-</string>
-    <string name="appNameTitle">Mac\'s Java Shop</string>
-    <string name="long_name">Wow! That is a long name.</string>
+    <string name="orderBtn">Order</string>
+    <string name="lotOfJavaMessage">Wow! That is a lot of java.</string>
+
+
+    <!--Message outputs for ordering java.-->
+    <string name="regularMessage">Your total for %d cups of java is $%d.</string>
+    <string name="cinnamonMessage">Your total for %d cups of cinnamon java is $%d.</string>
+    <string name="whippedCreamMessage">Your total for %d cups of whipped cream java is $%d.</string>
+    <string name="bothMessage">Your total for %d cups of cinnamon-cream java is $%d.</string>
+    <string name="thankYouMessage">\n\nThank you %s !</string>
+
+    <!--Email Intent Strings-->
+    <string name="emailTitle">Java Order for %s</string>
+
 </resources>
