@@ -29,5 +29,7 @@
 
     <!--Email Intent Strings-->
     <string name="emailTitle">Java Order for %s</string>
+    <string name="airJavaMessage">Air Java coming soon!</string>
+    <string name="discountMessage">Looks like you qualified for our multi-java discount. Enjoy savings!</string>
 
 </resources>

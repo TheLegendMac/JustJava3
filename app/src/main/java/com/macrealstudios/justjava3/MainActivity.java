@@ -18,6 +18,7 @@ import android.widget.Toast;
  */
 public class MainActivity extends AppCompatActivity {
 
+    //  Initializing quantity number
     int quantity = 2;
 
     @Override
@@ -39,11 +40,21 @@ public class MainActivity extends AppCompatActivity {
         displayQuantity(quantity);
     }
 
+//  Checks the quantity if it is more then 7 then java goes for $2 a cup
+    public Boolean multiDiscount() {
+        Boolean multiDiscountStatus = false;
+        if (quantity >= 7) {
+            multiDiscountStatus = true;
+        }
+        return multiDiscountStatus;
+    }
+
     /**
      * This method is called when the minus button is clicked.
      */
     public void decrement(View view) {
         if (quantity == 1) {
+            Toast.makeText(this, R.string.airJavaMessage, Toast.LENGTH_SHORT).show();
             return;
         }
         quantity = quantity - 1;
@@ -95,8 +106,15 @@ public class MainActivity extends AppCompatActivity {
      * @return total price
      */
     private int calculatePrice(boolean addWhippedCream, boolean hasCinnamon) {
-        // First calculate the price of one cup of coffee
-        int basePrice = 3;
+        int basePrice;
+
+        //Checking if user has more then 7 cups. If they do then cups of java goes for $2 a cup
+        if (multiDiscount()) {
+            Toast.makeText(this, R.string.discountMessage, Toast.LENGTH_SHORT).show();
+            basePrice = 2;
+        } else {
+            basePrice = 3;
+        }
 
         // If the user wants whipped cream, add $1 per cup
         if (addWhippedCream) {

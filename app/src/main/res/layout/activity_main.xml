@@ -3,8 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    >
+    android:fillViewport="true">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -14,6 +13,7 @@
         android:background="@color/bgColor"
         tools:context="com.macrealstudios.justjava3.MainActivity">
 
+        <!--Making a custom tool bar-->
         <RelativeLayout
             android:id="@+id/titleBar"
             style="@style/captureTitleBar"
@@ -21,6 +21,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true">
 
+            <!--Title of app-->
             <TextView
                 android:id="@+id/textView3"
                 style="@style/activityTitleText"
@@ -28,13 +29,15 @@
                 android:text="@string/appNameTitle" />
         </RelativeLayout>
 
+        <!--Name Edit Box-->
         <EditText
             android:id="@+id/name"
             style="@style/nameText"
-            android:inputType="textCapWords"
             android:layout_below="@+id/titleBar"
-            android:hint="@string/nameQuestion" />
+            android:hint="@string/nameQuestion"
+            android:inputType="textCapWords" />
 
+        <!--White Line-->
         <View
             style="@style/line"
             android:layout_below="@id/name" />
@@ -45,6 +48,7 @@
             android:layout_below="@id/name"
             android:text="@string/cups" />
 
+        <!--Holder view for quantity of java-->
         <LinearLayout
             android:id="@+id/linearLayout"
             style="@style/centeredLayout"
@@ -78,6 +82,7 @@
             android:layout_below="@id/linearLayout"
             android:text="@string/toppings" />
 
+        <!--Toppings holder-->
         <LinearLayout
             android:id="@+id/toppingHolder"
             android:layout_width="match_parent"
@@ -100,31 +105,33 @@
         <View
             style="@style/line"
             android:layout_below="@id/toppingHolder" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:layout_below="@id/toppingHolder"
-            >
-        <TextView
-            android:id="@+id/summaryView"
-            android:layout_weight="2"
-            android:paddingBottom="25dp"
-            style="@style/HeaderTextStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/submitButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/roundbutton"
-            android:onClick="submitOrder"
-            android:padding="25dp"
-            android:text="@string/orderBtn"
-            android:textColor="#ffff"
-            android:textSize="14sp" />
+            <!--Thank you text holder-->
+            <TextView
+                android:id="@+id/summaryView"
+                style="@style/HeaderTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingBottom="25dp" />
+
+            <!--Submit button-->
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundbutton"
+                android:onClick="submitOrder"
+                android:padding="25dp"
+                android:text="@string/orderBtn"
+                android:textColor="#ffff"
+                android:textSize="14sp" />
         </LinearLayout>
     </RelativeLayout>
 </ScrollView>
